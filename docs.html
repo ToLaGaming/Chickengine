@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chickengine Documentation</title>
+    <link rel="stylesheet" href="docsstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Chickengine Documentation</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#Why should I use Chickengine">Why should i use Chickengine</a></li>
+                <li><a href="#api">API</a></li>
+                <li><a href="#editor">Game Editor</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>Chickengine is a WebGL engine for Javascript coding. built for creating interactive games directly in the browser.</p>
+        <p>With Chickengine, you can build, edit, and run games entirely from your web browser without needing to install anything.</p>
+    </section>
+
+    <section id="usage">
+        <h2>Usage</h2>
+        <p>To start using Chickengine, simply open the game editor and begin writing JavaScript code to control your game’s logic. Here’s an example:</p>
+        <pre><code>function initWebGL() {
+    const canvas = document.createElement('canvas');
+    document.body.appendChild(canvas);
+    const gl = canvas.getContext('webgl');
+    gl.clearColor(0.0, 0.0, 0.0, 1.0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+}
+window.onload = initWebGL;</code></pre>
+        <p>You can add this code in the game editor, and it will initialize WebGL for rendering.</p>
+    </section>
+
+    <section id="Why should I use Chickengine">
+        <h2>Why should I use Chickengine</h2>
+        <p>Because it is a free and open source game engine</p>
+        <p>Chickengine does not even own a procent </p>
+    </section>
+
+    <section id="api">
+        <h2>API</h2>
+        <p>Chickengine provides the following methods and objects:</p>
+        <h3>initWebGL()</h3>
+        <p>This method initializes a WebGL context on a canvas element.</p>
+        <h3>clearColor(r, g, b, a)</h3>
+        <p>Sets the clear color for the WebGL canvas, which is used when clearing the screen.</p>
+        <!-- More API methods can be added here -->
+    </section>
+
+    <section id="editor">
+        <h2>Game Editor</h2>
+        <p>The Chickengine editor allows you to write code, test your game, and visualize the results directly in the browser.</p>
+        <p>You can open the editor by clicking the button below:</p>
+        <button id="goToEditorButton">Go to Game Editor</button>
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="docs.js"></script>
+</body>
+</html>

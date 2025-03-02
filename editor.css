@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3b);
+    color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.editor-container {
+    margin: 20px auto;
+    padding: 20px;
+    background: #2a2a3b;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+}
+
+.editor-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(255, 65, 108, 0.3);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.5);
+}
+
+#editor {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background: #1e1e2f;
+    color: #f4f4f4;
+    font-family: 'Courier New', monospace;
+    padding: 15px;
+    border: 2px solid #ff416c;
+}
+
+.toolbar {
+    display: flex;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+.toolbar button {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.toolbar button.active {
+    background: #777;
+}
+
+.workspace {
+    width: 100vw;
+    height: calc(100vh - 40px);
+    background: #eee;
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    transition: height 0.3s ease;
+}
+
+#sceneWorkspace {
+    display: block;
+}
+
+#codeWorkspace {
+    display: none; 
+    flex-direction: column;
+    height: calc(100vh - 40px);
+}
+
+.editor-area {
+    flex-grow: 1;
+    position: relative;
+    overflow-y: auto;
+}
+
+#codeEditor {
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    resize: none;
+    outline: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#codeEditor:focus {
+    color: #ff66b2;
+    text-shadow: 0 0 8px rgba(255, 105, 180, 0.8), 0 0 16px rgba(255, 105, 180, 0.6);
+}

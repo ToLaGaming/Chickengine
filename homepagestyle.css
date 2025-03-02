@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3b);
+    color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#engineInfo {
+    margin: 20px auto;
+    padding: 20px;
+    background: #2a2a3b;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    text-align: center;
+}
+
+#engineInfo h2 {
+    margin-top: 0;
+    color: #ff416c;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.toolbar button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(255, 65, 108, 0.3);
+}
+
+.toolbar button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.5);
+}

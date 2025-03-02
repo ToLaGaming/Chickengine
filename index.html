@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chickengine</title>
+    <link rel="stylesheet" href="homepagestyle.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        header h1 {
+            animation: slideIn 1s ease-out;
+        }
+
+        #engineInfo {
+            animation: fadeIn 1s ease-out;
+        }
+
+        .toolbar button {
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        #engineInfo h2 {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Chickengine</h1>
+    </header>
+    
+    <section id="engineInfo">
+        <h2>Engine Information</h2>
+        <p>Name: Chickengine</p>
+        <p>Version: 1.0 beta</p>
+        <p>Description: A WebGL engine for Javascript coding.</p>
+    </section>
+
+    <div class="toolbar">
+        <button id="goToEditorButton">Go to Editor</button>
+        <button id="goToDocumentationButton">Go to Documentation</button>
+    </div>
+
+    <script>
+        document.getElementById("goToEditorButton").addEventListener("click", function() {
+            window.location.href = "editor.html";
+        });
+    
+        document.getElementById("goToDocumentationButton").addEventListener("click", function() {
+            window.location.href = "docs.html";
+        });
+    </script>
+    
+</body>
+</html>
